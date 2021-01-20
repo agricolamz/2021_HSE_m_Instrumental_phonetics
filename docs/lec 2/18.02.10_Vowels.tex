@@ -1,0 +1,404 @@
+\input{pre}\setbeamercolor{alerted text}{fg=blue}
+\setbeamersize{text margin left=4mm,text margin right=1mm} 
+\setbeamertemplate{frametitle}[default][center]
+\setbeamertemplate{navigation symbols}{
+	\usebeamerfont{footline}%
+    \usebeamercolor[fg]{footline}%
+    \hspace{1em}%
+    {{\small презентация доступна: \href{https://goo.gl/HUrRuk}{\textbf{https://goo.gl/HUrRuk}}}
+    \hspace{4cm}
+    \insertframenumber/\inserttotalframenumber\vspace{0.5mm}}}
+\title[]{Vowels}
+\author[]{G. Moroz}
+\date{10 February, 2018}
+\begin{document}
+\frame{\titlepage}
+
+\begin{frame}{Previously}
+\begin{itemize}
+\item Sound waves have
+\begin{itemize}
+\item A --- amplitude
+\item f --- fundamental frequency
+\item φ --- phase
+\item t --- time
+\end{itemize}
+\item Speech sounds are complex waves
+\item Fourier transform --- allows to extract components of the complex wave
+\end{itemize}
+\end{frame}
+
+
+\begin{frame}{Source-Filter Model}
+\begin{itemize}
+\item \href{https://raw.githubusercontent.com/agricolamz/2018_m_Instrumental_Phonetics/master/docs/materials/larynx.mp4}{Larynx produce some sound}
+\item \href{https://raw.githubusercontent.com/agricolamz/2018_m_Instrumental_Phonetics/master/docs/materials/MRI-speech.mp4}{Vocal tract filter some frequencies}
+\end{itemize}
+\includegraphics[width=0.95\linewidth]{01-source-filter.png}
+\end{frame}
+
+\section{Vowel production}
+\begin{frame}{How shape of the vocal tract influences on vowels?}
+\Large
+\vfill
+\begin{center}
+\begin{vowel}
+\putcvowel[l]{i}{1}
+\putcvowel[r]{y}{1}
+\putcvowel[l]{e}{2}
+\putcvowel[r]{ø}{2}
+\putcvowel[l]{ɛ}{3}
+\putcvowel[r]{œ}{3}
+\putcvowel[l]{a}{4}
+\putcvowel[r]{ɶ}{4}
+\putcvowel[l]{ɑ}{5}
+\putcvowel[r]{ɒ}{5}
+\putcvowel[l]{ʌ}{6}
+\putcvowel[r]{ɔ}{6}
+\putcvowel[l]{ɤ}{7}
+\putcvowel[r]{o}{7}
+\putcvowel[r]{u}{8}
+\putcvowel[l]{ɯ}{8}
+\putcvowel[r]{ɨ}{9}
+\putcvowel[l]{ʉ}{9}
+\putcvowel[r]{ɘ}{10}
+\putcvowel[l]{ɵ}{10}
+\putcvowel{ə}{11}
+\putcvowel[r]{ɜ}{12}
+\putcvowel[l]{ɞ}{12}
+\putcvowel{ɪ ʏ}{13}
+\putcvowel{ʊ}{14}
+\putcvowel{ɐ}{15}
+\putcvowel{æ}{16}
+\end{vowel}
+\end{center}
+\vfill
+\normalsize
+Historically, height and backness are impressionistic linguistic terms
+\end{frame}
+
+\begin{frame}{How shape of the vocal tract influences on vowels?}
+\Large
+\vfill
+\begin{center}
+\begin{vowel}
+\putcvowel{i}{1}
+\putcvowel{a}{4}
+\putcvowel{u}{8}
+\end{vowel}
+\end{center}
+\vfill
+\end{frame}
+
+\begin{frame}{How shape of the vocal tract influences on vowels?}
+\Large
+\vfill
+\begin{center}
+\begin{vowel}
+\putcvowel{\includegraphics[width=0.2\linewidth]{02-i.png}}{1}
+\putcvowel{\includegraphics[width=0.2\linewidth]{03-a.png}}{4}
+\putcvowel{\includegraphics[width=0.2\linewidth]{04-u.png}}{8}
+\end{vowel}
+\end{center}
+\vfill
+\end{frame}
+
+\begin{frame}{How shape of the vocal tract influences on vowels?}
+\Large
+\vfill
+\begin{center}
+\begin{vowel}
+\putcvowel{\includegraphics[width=0.3\linewidth]{05-i-spectrum.png}}{1}
+\putcvowel{\includegraphics[width=0.3\linewidth]{06-a-spectrum.png}}{4}
+\putcvowel{\includegraphics[width=0.3\linewidth]{07-u-spectrum.png}}{8}
+\end{vowel}
+\end{center}
+\vfill
+\normalsize
+\begin{center}
+\begin{tabular}{|c|c|c|c|}
+\hline
+ & i & a & u \\ \hline
+F1 & 300 & 700 & 300 \\ \hline
+F2 & 2300 & 1400 & 800 \\ \hline
+\end{tabular}
+\end{center}
+\end{frame}
+
+\begin{frame}{Vowel chart}
+\includegraphics[width=\linewidth]{03-vowel-chart.png}
+\end{frame}
+
+\section{Tube model}
+\begin{frame}{How shape of the vocal tract influences on vowels?}
+\Large
+\vfill
+\begin{center}
+\begin{vowel}
+\putcvowel{\includegraphics[width=0.2\linewidth]{08-i-tube.png}}{1}
+\putcvowel{\includegraphics[width=0.2\linewidth]{09-a-tube.png}}{4}
+\putcvowel{\includegraphics[width=0.2\linewidth]{10-u-tube.png}}{8}
+\end{vowel}
+\end{center}
+\vfill
+\normalsize
+Tube model, \citep{fant60}: vocal tract is a tube or a set of tubes
+\end{frame}
+
+\begin{frame}{Wavelength}
+\includegraphics[width=0.8\linewidth]{11-wavelength.png}
+$$c = \frac{\lambda}{T} = \lambda\times f \approx 33400\text{ cm/s}$$
+\textit{c} --- speed of sound; \textit{λ} --- wavelength; \textit{f} --- sound frequency; \textit{T} --- period
+\end{frame}
+
+\begin{frame}{Neutral vocal tract in the position for the vowel ə}
+\includegraphics[width=0.8\linewidth]{12-shwa-tube.png}\\
+Resonance is a phenomenon in which a vibrating system or external force drives another system to oscillate with greater amplitude at specific frequencies. The lowest natural frequency at which such a tube resonates will have a wavelength (\textit{λ}) \textbf{four times the length} of the tube (\textit{L}).
+$$f = \frac{c}{\lambda} = \frac{c}{4 \times L} \approx \frac{33400}{17.5 \times 4} \approx 477 \text{ Hz} \approx 500 \text{ Hz}$$
+
+The tube also resonates at \textbf{odd multiples} of that frequency. \pause \textbf{Why?}
+\end{frame}
+
+\begin{frame}{Wave addition}
+\includegraphics[width=\linewidth]{13-waves.jpeg}\\
+\end{frame}
+
+\begin{frame}{Neutral vocal tract in the position for the vowel ə}
+\includegraphics[width=0.8\linewidth]{12-shwa-tube.png}\\
+$$F_1 = \frac{c}{\lambda} = \frac{c}{4 \times L} \approx 500 \text{ Hz}$$
+$$F_2 = \frac{c}{\lambda} = \frac{c}{\frac{4}{3} \times L} = \frac{3 \times c}{4 L} \approx 1500 \text{ Hz}$$
+$$F_3 = \frac{c}{\lambda} = \frac{c}{\frac{4}{5} \times L} = \frac{5 \times c}{4 L} \approx 2500 \text{ Hz}$$
+$$F_n = \frac{c}{\lambda} = \frac{c}{\frac{4}{n} \times L} = \frac{n \times c}{4 L} \approx n \times 500 \text{ Hz}$$
+\end{frame}
+
+\begin{frame}{\invisible<2>{???}\visible<2>{Cat meow}}
+\includegraphics[width=\linewidth]{14-cat-meow.png}\\
+\href{https://github.com/agricolamz/2018_m_Instrumental_Phonetics/raw/master/docs/materials/cat_meow.wav}{listen}
+\end{frame}
+
+\begin{frame}{How shape of the vocal tract influences on vowels?}
+\Large
+\vfill
+\begin{center}
+\begin{vowel}
+\putcvowel{i}{1}
+\putcvowel{a}{4}
+\putcvowel{u}{8}
+\end{vowel}
+\end{center}
+\vfill
+\end{frame}
+
+\begin{frame}{How shape of the vocal tract influences on vowels?}
+\Large
+\vfill
+\begin{center}
+\begin{vowel}
+\putcvowel{\includegraphics[width=0.2\linewidth]{02-i.png}}{1}
+\putcvowel{\includegraphics[width=0.2\linewidth]{03-a.png}}{4}
+\putcvowel{\includegraphics[width=0.2\linewidth]{04-u.png}}{8}
+\end{vowel}
+\end{center}
+\vfill
+\end{frame}
+
+\begin{frame}{How shape of the vocal tract influences on vowels?}
+\Large
+\vfill
+\begin{center}
+\begin{vowel}
+\putcvowel{\includegraphics[width=0.2\linewidth]{08-i-tube.png}}{1}
+\putcvowel{\includegraphics[width=0.2\linewidth]{09-a-tube.png}}{4}
+\putcvowel{\includegraphics[width=0.2\linewidth]{10-u-tube.png}}{8}
+\end{vowel}
+\end{center}
+\vfill
+\normalsize
+When there is a constriction, back tube and constriction form \href{https://github.com/agricolamz/2018_m_Instrumental_Phonetics/raw/master/docs/materials/Helmholtz-resonance.mp4}{\textbf{Helmholtz resonator}}
+$$f = \frac{c}{2\pi} \times \sqrt{\frac{A}{V\times L}}$$
+\textit{A} --- the area of the neck; \textit{L} --- length of the tube; \textit{V} --- volume of the air in the body
+\end{frame}
+
+\begin{frame}{How shape of the vocal tract influences on vowels?}
+\includegraphics[width=0.6\linewidth]{15-tubes.png}
+\end{frame}
+
+\section{other models}
+\begin{frame}{Other models}
+\begin{itemize}
+\item Perturbation Theory Kajiyama 1941, Mrayati et al. 1988
+\item Quantal Theory Stevens 1989
+\item Theory of adaptive dispersion Lindblom 1990
+\item \dots
+\end{itemize}
+\end{frame}
+
+\section{seminar}
+\begin{frame}{How to get something like that?}
+\includegraphics[width=\linewidth]{03-vowel-chart.png}
+\end{frame}
+
+\begin{frame}{Vowel editor}
+Praat objects > New > Sound > Create sound from VowelEditor...
+\includegraphics[width=\linewidth]{04-vowel-editor.png}
+\end{frame}
+
+
+\section{Vowel analysis}
+\begin{frame}{How to analyse vowels?}
+\begin{itemize}
+\item record sounds
+\item annotate sounds
+\item make an exploratory analysis
+\item extract duration and formant information from your data
+\item create the plot
+\end{itemize}
+\end{frame}
+
+\begin{frame}{How to analyse vowels?}
+\begin{itemize}
+\item[\checkmark] record sounds
+\item[\checkmark] annotate sounds
+\item make an exploratory analysis
+\item extract duration and formant information from your data
+\item create the plot
+\end{itemize}
+\end{frame}
+
+\subsection{exploratory analysis}
+\begin{frame}{Formants in Praat}
+Praat Analyser > Formant > Show Formants\\
+\includegraphics[width=\linewidth]{05-formnats.png}\\
+F1 \hfill select the nearest first formant value or mean value for selection\\
+F2 \hfill select the nearest second formant value or mean value for selection\\
+F3 \hfill select the nearest third formant value or mean value for selection\\
+\end{frame}
+
+\begin{frame}{Formants in Praat}
+Praat Analyser > Formant > Formant Settings...\\
+\includegraphics[width=\linewidth]{05-formnats.png}\\
+During analysis you should set Maximum Formant value  so as to distinguish [i], [a] and [u].
+\end{frame}
+
+\begin{frame}{How to analyse vowels?}
+\begin{itemize}
+\item[\checkmark] record sounds
+\item[\checkmark] annotate sounds
+\item[\checkmark] make an exploratory analysis
+\item extract duration and formant information from your data
+\item create the plot
+\end{itemize}
+\end{frame}
+
+\subsection{extract data}
+\begin{frame}{Change writing preferences to UTF-8!}
+Praat Objects > Preferences > Text writing preferences...
+\end{frame}
+
+\begin{frame}{Praat scripting}
+Praat have its own scripting language. You can read about it:\\
+Praat Objects > Help > Scripting tutorial\\
+There are  a lot of Praat scripts \href{http://phonetics.linguistics.ucla.edu/facilities/acoustic/praat.html}{here}.
+\end{frame}
+
+\begin{frame}{Praat scripting: extracting duration}
+\begin{itemize}
+\item Open Praat Objects
+\item Open some TextGrid
+\item Praat Objects > Praat > New Praat script
+\item Copy script from \href{https://goo.gl/n7vbDy}{here} to the new window
+\item Select TextGrid
+\item Praat Script > Run > Run
+\item Provide some valid path for the result file
+\item Press OK
+\end{itemize}
+\end{frame}
+
+\begin{frame}{Praat scripting: extracting formant values}
+\begin{itemize}
+\item Open Praat Objects
+\item Praat Objects > Praat > New Praat script
+\item Copy script from \href{https://goo.gl/MUBpPw}{here} to the new window
+\item Praat Script > Run > Run
+\item Provide some path with your sound and TextGrid
+\item Provide Maximum Formant value
+\item Press OK
+\end{itemize}
+\end{frame}
+
+\begin{frame}{How to analyse vowels?}
+\begin{itemize}
+\item[\checkmark] record sounds
+\item[\checkmark] annotate sounds
+\item[\checkmark] make an exploratory analysis
+\item[\checkmark] extract duration and formant information from your data
+\item create the plot
+\end{itemize}
+\end{frame}
+
+\subsection{plotting}
+\begin{frame}[fragile]{Plotting formant values with ggplot2}
+\scriptsize
+\begin{verbatim}
+library(ggplot2)
+setwd("...") # Put here path with the result.tsv file
+df <- read.csv("result.txt", sep = "\t", fileEncoding = "UTF-8")
+ggplot(data = df, aes(F2, F1, color = intervalname, label = intervalname))+
+  geom_text(show.legend = F)+
+  scale_y_reverse(position = "right")+
+  scale_x_reverse(position = "top")
+\end{verbatim}
+\end{frame}
+
+\begin{frame}[fragile]{Plotting formant values with ggplot2}
+\begin{center}
+\includegraphics[width=0.7\linewidth]{06-ggplot.png}
+\end{center}
+\end{frame}
+
+\begin{frame}{How to analyse vowels?}
+\begin{itemize}
+\item[\checkmark] record sounds
+\item[\checkmark] annotate sounds
+\item[\checkmark] make an exploratory analysis
+\item[\checkmark] extract duration and formant information from your data
+\item[\checkmark] create the plot
+\end{itemize}
+\end{frame}
+
+\section{R packages}
+\subsection{vowels}
+\begin{frame}{vowels}
+\begin{itemize}
+\item Version: 1.2-1
+\item Date: 2014-11-14
+\item Author: Tyler Kendall and Erik R. Thomas, \citep{kendall14}
+\end{itemize}
+\vfill
+\texttt{install.packages("vowels")}
+\end{frame}
+
+\subsection{phonTools}
+\begin{frame}{phonTools}
+\begin{itemize}
+\item Version: 0.2-2.1
+\item Date: 2015-07-30
+\item Author: Santiago Barreda, \citep{barreda15}
+\end{itemize}
+\vfill
+\texttt{install.packages("phonTools")}
+\end{frame}
+
+\section{}
+\begin{frame}
+{\huge Thank you!\bigskip\\
+\normalsize Please, don't hesitate to write me\\
+agricolamz@gmail.com
+\vspace{-130pt}}
+\end{frame}
+\begin{frame}{Reference}
+\footnotesize
+\bibliographystyle{chicago}
+\bibliography{bibliography}
+\end{frame}
+\end{document}

@@ -1,0 +1,53 @@
+%!TEX TS-program = xelatex
+
+\documentclass[t]{beamer}
+
+\usetheme{Hannover}
+\usecolortheme{rose}
+
+\usepackage{fontspec,xltxtra,xunicode}      %% подготавливает загрузку шрифтов Open Type, True Type и др.
+%\defaultfontfeatures{Ligatures={TeX},Renderer=Basic}  %% свойства шрифтов по умолчанию
+\setmainfont{Brill} 
+\setsansfont{Brill}
+\setmonofont[Ligatures=NoCommon]{DejaVu Sans}
+\usepackage{amsmath,amsfonts,amssymb,amsthm,mathtools} % AMS
+\usepackage{icomma} % "Умная" запятая: $0,2$ --- число, $0, 2$ --- перечисление
+
+
+%%% Работа с таблицами
+\usepackage{array,tabularx,tabulary,booktabs} % Дополнительная работа с таблицами
+\usepackage{longtable}  % Длинные таблицы
+\usepackage{multirow} % Слияние строк в таблице
+
+%%% Страница
+%\usepackage{fancyhdr} % Колонтитулы
+% 	\pagestyle{fancy}
+ 	%\renewcommand{\headrulewidth}{0pt}  % Толщина линейки, отчеркивающей верхний колонтитул
+% 	\lfoot{Нижний левый}
+% 	\rfoot{Нижний правый}
+% 	\rhead{Верхний правый}
+% 	\chead{Верхний в центре}
+% 	\lhead{Верхний левый}
+%	\cfoot{Нижний в центре} % По умолчанию здесь номер страницы
+
+\usepackage{setspace} % Интерлиньяж
+%\onehalfspacing % Интерлиньяж 1.5
+%\doublespacing % Интерлиньяж 2
+\singlespacing % Интерлиньяж 1
+
+\usepackage{hyperref}
+\hypersetup{
+     colorlinks   = true,
+     citecolor = black,
+     urlcolor    = blue
+}
+
+
+%%% Лингвистические пакеты
+%\usepackage{savetrees} % пакет, который экономит место
+\usepackage{natbib}
+\bibpunct[: ]{[}{]}{;}{a}{}{,}
+%\usepackage{glossary-mcols} 
+%\setglossarystyle{mcolindex}
+\newcommand{\mytem}{\item[$\circ$]}
+\newcommand{\apostrophe}{\XeTeXglyph\XeTeXcharglyph"0027\relax}
