@@ -6,8 +6,8 @@ Final Mark =0.6 $\times$ (HW) + 0.4 $\times$ (Exam)
 
 ### 1. Introduction to Acoustic Phonetics
 
-* (20.01.2021)	[Lec 1](https://github.com/agricolamz/2021_HSE_m_Instrumental_phonetics/raw/master/docs/21.01.20_Acoustic_Phonetics_lec_1.pdf), [additional materials on waves](https://pudding.cool/2018/02/waveforms/) ([video](https://youtu.be/AD2KYpXlo4A))
-* (27.01.2021) [Lec2](https://github.com/agricolamz/2021_HSE_m_Instrumental_phonetics/raw/master/docs/2021.01.27_bioacoustics.pdf)
+* (20.01.2021)	[Lec 1](https://github.com/agricolamz/2021_HSE_m_Instrumental_phonetics/raw/master/docs/lec%201/21.01.16_Acoustic_Phonetics_lec_1.pdf), [additional materials on waves](https://pudding.cool/2018/02/waveforms/) ([video](https://youtu.be/AD2KYpXlo4A))
+* (27.01.2021) [Lec2](https://github.com/agricolamz/2021_HSE_m_Instrumental_phonetics/raw/master/docs/2021.01.27_bioacoustics.pdf) ([video](https://youtu.be/NoZxQiu1fzs))
 * (27.01.2021)	Lab 1: [Praat](http://www.fon.hum.uva.nl/praat/). Symbols for [consonats](http://www.fon.hum.uva.nl/praat/manual/Phonetic_symbols__consonants_1.png), [vowels](http://www.fon.hum.uva.nl/praat/manual/Phonetic_symbols__vowels_1.png) and [diacritics](http://www.fon.hum.uva.nl/praat/manual/Phonetic_symbols__diacritics.html)
 * HW 1 (due to 10.02.2021): 
     * Create the  annotation for [this sound file](https://github.com/agricolamz/2018_m_Instrumental_Phonetics/blob/master/docs/materials/andi_plosives.wav?raw=true) containing words *bek':ub* (hot), *wuk:udu* (fall down), *tʃ'ek'a* (foot) and *t'uka* (goat). Here is [an example](https://raw.githubusercontent.com/agricolamz/2018_m_Instrumental_Phonetics/master/docs/hw1.png).
