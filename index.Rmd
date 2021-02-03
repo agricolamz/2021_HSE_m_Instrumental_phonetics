@@ -16,7 +16,7 @@ Final Mark =0.6 $\times$ (HW) + 0.4 $\times$ (Exam)
 * HW 1 (due to 10.02.2021): 
     * Create the  annotation for [this sound file](https://github.com/agricolamz/2018_m_Instrumental_Phonetics/blob/master/docs/materials/andi_plosives.wav?raw=true) containing words *bek':ub* (hot), *wuk:udu* (fall down), *tʃ'ek'a* (foot) and *t'uka* (goat). Here is [an example](https://raw.githubusercontent.com/agricolamz/2018_m_Instrumental_Phonetics/master/docs/hw1.png).
     * Send the `.TextGrid` file to the course assistant [Nastya Safonova](mailto:nastya-saff@yandex.ru) with the topic `Instrumental Phonetics: HW 1`
-* (03.02.2021) [Lec3](https://github.com/agricolamz/2021_HSE_m_Instrumental_phonetics/raw/master/docs/18.02.10_Vowels.pdf)
+* (03.02.2021) [Lec3](https://github.com/agricolamz/2021_HSE_m_Instrumental_phonetics/raw/master/docs/18.02.10_Vowels.pdf) ([video](https://youtu.be/zdTIzDHnwQo))
 * (03.02.2021) Lab
     * [sound](https://goo.gl/IzpUyo)
     * [TextGrid](https://goo.gl/4tGthZ) (press Ctrl+S in order to save it to your PC)
