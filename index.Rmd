@@ -22,7 +22,7 @@ Final Mark =0.6 $\times$ (HW) + 0.4 $\times$ (Exam)
     * [TextGrid](https://goo.gl/4tGthZ) (press Ctrl+S in order to save it to your PC)
     * [`phonfieldwork`](https://docs.ropensci.org/phonfieldwork/)
 
-* (10.02.2021) [Lec4](https://github.com/agricolamz/2021_HSE_m_Instrumental_phonetics/raw/master/docs/lec%203/2020.03.06_Sonorants.pdf)
+* (10.02.2021) [Lec4](https://github.com/agricolamz/2021_HSE_m_Instrumental_phonetics/raw/master/docs/lec%203/2020.03.06_Sonorants.pdf) ([video](https://youtu.be/Ff7c8SUOxws))
 * (10.02.2021) [Lab4](https://github.com/agricolamz/2021_HSE_m_Instrumental_phonetics/raw/master/docs/18.02.17_Sonorants_sem_3.pdf)
     * [Andi nasals](https://goo.gl/5D9DNR)
     * [R script for visualising spectral slices](https://github.com/agricolamz/2021_HSE_m_Instrumental_phonetics/raw/master/scripts/visualise_spectral_slices.R)

@@ -1,7 +1,8 @@
+setwd("...") # put your path here
 library(tidyverse)
-n <- read_csv("andi_nasals_0_897.Table")
+n <- read_csv("n.csv")
 n$sound_type <- "n"
-m <- read_csv("m.Table")
+m <- read_csv("m.csv")
 m$sound_type <- "m"
 
 n %>% 
