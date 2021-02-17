@@ -27,6 +27,14 @@ Final Mark =0.6 $\times$ (HW) + 0.4 $\times$ (Exam)
     * [Andi nasals](https://goo.gl/5D9DNR)
     * [R script for visualising spectral slices](https://github.com/agricolamz/2021_HSE_m_Instrumental_phonetics/raw/master/scripts/visualise_spectral_slices.R)
 
+* (17.02.2021) [Lec5](https://github.com/agricolamz/2021_HSE_m_Instrumental_phonetics/raw/master/docs/lec%203/20.03.12_Obstruents_lec_4.pdf)
+* (17.02.2021) [Lab5](https://github.com/agricolamz/2021_HSE_m_Instrumental_phonetics/raw/master/docs/18.02.24_Obstruents_sem_4.pdf)
+* [fricatives](https://goo.gl/hvdviI), [fricatives' TextGrid](https://goo.gl/pza6tx), Extracted data: [ɬ](https://goo.gl/wo3QZN), [s](https://goo.gl/eNZQKa), [sh](https://goo.gl/NgeVSX), [x](https://goo.gl/oDYvbJ), [χ](https://goo.gl/vZQfZG) 
+* [fricatives' R script](https://goo.gl/SdGlZr)
+* [plosives](https://goo.gl/PZA8WY), [plosives' TextGrid](https://goo.gl/1ZFtJt), Extracted data: [plosives' duration](https://goo.gl/NExChs)
+* [plosives' R script](https://gist.githubusercontent.com/agricolamz/c4c5e6dfd5cfcd8052e5f03db7b12f64/raw/54248887fef342aad90db42f5439456dda5f1d88/CD_VOT.R)
+
+
 ### Reference:
 
 * Ashby, M., J. Maidment (2005). Introducing phonetic science. Cambridge University Press.
