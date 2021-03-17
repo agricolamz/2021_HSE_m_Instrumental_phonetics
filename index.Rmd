@@ -34,6 +34,12 @@ Final Mark =0.6 $\times$ (HW) + 0.4 $\times$ (Exam)
     * [plosives](https://goo.gl/PZA8WY), [plosives' TextGrid](https://goo.gl/1ZFtJt), Extracted data: [plosives' duration](https://goo.gl/NExChs)
     * [plosives' R script](https://gist.githubusercontent.com/agricolamz/c4c5e6dfd5cfcd8052e5f03db7b12f64/raw/54248887fef342aad90db42f5439456dda5f1d88/CD_VOT.R)
 
+* (24.02.2021) [Lec6 on prosody](https://github.com/agricolamz/2021_HSE_m_Instrumental_phonetics/raw/master/docs/2021_prosody.pdf) ([video](https://youtu.be/jQwZ7KcmIzE))
+* (24.02.2021) [Lec6 on reading spectrograms](https://github.com/agricolamz/2021_HSE_m_Instrumental_phonetics/raw/master/docs/2021_reading_spectrorgams.pdf)
+
+* (10.03.2021) Lec7 ([video](https://youtu.be/eUmfhdsOhws))
+
+* (17.03.2021) Lec8 ([video](https://youtu.be/n71fZxyiA2E))
 
 ### Reference:
 

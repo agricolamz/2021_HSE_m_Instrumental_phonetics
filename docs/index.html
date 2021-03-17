@@ -13,13 +13,22 @@
 
 <title>Instrumental Phonetics 2021</title>
 
-<script src="site_libs/header-attrs-2.6/header-attrs.js"></script>
+<script src="site_libs/header-attrs-2.7/header-attrs.js"></script>
 <script src="site_libs/jquery-1.11.3/jquery.min.js"></script>
 <meta name="viewport" content="width=device-width, initial-scale=1" />
 <link href="site_libs/bootstrap-3.3.5/css/bootstrap.min.css" rel="stylesheet" />
 <script src="site_libs/bootstrap-3.3.5/js/bootstrap.min.js"></script>
 <script src="site_libs/bootstrap-3.3.5/shim/html5shiv.min.js"></script>
 <script src="site_libs/bootstrap-3.3.5/shim/respond.min.js"></script>
+<style>h1 {font-size: 34px;}
+       h1.title {font-size: 38px;}
+       h2 {font-size: 30px;}
+       h3 {font-size: 24px;}
+       h4 {font-size: 18px;}
+       h5 {font-size: 16px;}
+       h6 {font-size: 12px;}
+       code {color: inherit; background-color: rgba(0, 0, 0, 0.04);}
+       pre:not([class]) { background-color: white }</style>
 <script src="site_libs/navigation-1.1/tabsets.js"></script>
 <link href="site_libs/highlightjs-9.12.0/default.css" rel="stylesheet" />
 <script src="site_libs/highlightjs-9.12.0/highlight.js"></script>
@@ -34,11 +43,6 @@
     </style>
 
 <style type="text/css">code{white-space: pre;}</style>
-<style type="text/css">
-  pre:not([class]) {
-    background-color: white;
-  }
-</style>
 <script type="text/javascript">
 if (window.hljs) {
   hljs.configure({languages: []});
@@ -51,32 +55,6 @@ if (window.hljs) {
 
 
 
-<style type="text/css">
-h1 {
-  font-size: 34px;
-}
-h1.title {
-  font-size: 38px;
-}
-h2 {
-  font-size: 30px;
-}
-h3 {
-  font-size: 24px;
-}
-h4 {
-  font-size: 18px;
-}
-h5 {
-  font-size: 16px;
-}
-h6 {
-  font-size: 12px;
-}
-.table th:not([align]) {
-  text-align: left;
-}
-</style>
 
 
 
@@ -87,10 +65,6 @@ h6 {
   max-width: 940px;
   margin-left: auto;
   margin-right: auto;
-}
-code {
-  color: inherit;
-  background-color: rgba(0, 0, 0, 0.04);
 }
 img {
   max-width:100%;
@@ -107,40 +81,13 @@ button.code-folding-btn:focus {
 summary {
   display: list-item;
 }
+pre code {
+  padding: 0;
+}
 </style>
 
 
 <style type="text/css">
-/* padding for bootstrap navbar */
-body {
-  padding-top: 51px;
-  padding-bottom: 40px;
-}
-/* offset scroll position for anchor links (for fixed navbar)  */
-.section h1 {
-  padding-top: 56px;
-  margin-top: -56px;
-}
-.section h2 {
-  padding-top: 56px;
-  margin-top: -56px;
-}
-.section h3 {
-  padding-top: 56px;
-  margin-top: -56px;
-}
-.section h4 {
-  padding-top: 56px;
-  margin-top: -56px;
-}
-.section h5 {
-  padding-top: 56px;
-  margin-top: -56px;
-}
-.section h6 {
-  padding-top: 56px;
-  margin-top: -56px;
-}
 .dropdown-submenu {
   position: relative;
 }
@@ -168,7 +115,7 @@ body {
   margin-right: -10px;
 }
 .dropdown-submenu:hover>a:after {
-  border-left-color: #ffffff;
+  border-left-color: #adb5bd;
 }
 .dropdown-submenu.pull-left {
   float: none;
@@ -180,7 +127,7 @@ body {
 }
 </style>
 
-<script>
+<script type="text/javascript">
 // manage active state of menu based on current page
 $(document).ready(function () {
   // active menu anchor
@@ -191,10 +138,23 @@ $(document).ready(function () {
   var menuAnchor = $('a[href="' + href + '"]');
 
   // mark it active
-  menuAnchor.parent().addClass('active');
+  menuAnchor.tab('show');
 
   // if it's got a parent navbar menu mark it active as well
   menuAnchor.closest('li.dropdown').addClass('active');
+
+  // Navbar adjustments
+  var navHeight = $(".navbar").first().height() + 15;
+  var style = document.createElement('style');
+  var pt = "padding-top: " + navHeight + "px; ";
+  var mt = "margin-top: -" + navHeight + "px; ";
+  var css = "";
+  // offset scroll position for anchor links (for fixed navbar)
+  for (var i = 1; i <= 6; i++) {
+    css += ".section h" + i + "{ " + pt + mt + "}\n";
+  }
+  style.innerHTML = "body {" + pt + "padding-bottom: 40px; }\n" + css;
+  document.head.appendChild(style);
 });
 </script>
 
@@ -206,7 +166,6 @@ $(document).ready(function () {
   max-height: 500px;
   min-height: 44px;
   overflow-y: auto;
-  background: white;
   border: 1px solid #ddd;
   border-radius: 4px;
 }
@@ -293,7 +252,7 @@ $(document).ready(function () {
   </div><!--/.container -->
 </div><!--/.navbar -->
 
-<div class="fluid-row" id="header">
+<div id="header">
 
 
 
@@ -306,43 +265,47 @@ $(document).ready(function () {
 <div id="introduction-to-acoustic-phonetics" class="section level3">
 <h3>1. Introduction to Acoustic Phonetics</h3>
 <ul>
-<li>(20.01.2021) <a href="https://github.com/agricolamz/2021_HSE_m_Instrumental_phonetics/raw/master/docs/lec%201/21.01.16_Acoustic_Phonetics_lec_1.pdf">Lec 1</a> (<a href="https://youtu.be/AD2KYpXlo4A">video</a>)
+<li><p>(20.01.2021) <a href="https://github.com/agricolamz/2021_HSE_m_Instrumental_phonetics/raw/master/docs/lec%201/21.01.16_Acoustic_Phonetics_lec_1.pdf">Lec 1</a> (<a href="https://youtu.be/AD2KYpXlo4A">video</a>)</p>
 <ul>
 <li><a href="https://pudding.cool/2018/02/waveforms/">additional materials on waves</a></li>
 </ul></li>
-<li>(27.01.2021) <a href="https://github.com/agricolamz/2021_HSE_m_Instrumental_phonetics/raw/master/docs/2021.01.27_bioacoustics.pdf">Lec2</a> (<a href="https://youtu.be/NoZxQiu1fzs">video</a>)
+<li><p>(27.01.2021) <a href="https://github.com/agricolamz/2021_HSE_m_Instrumental_phonetics/raw/master/docs/2021.01.27_bioacoustics.pdf">Lec2</a> (<a href="https://youtu.be/NoZxQiu1fzs">video</a>)</p>
 <ul>
 <li><a href="https://www.xeno-canto.org/">database of bird calls</a> (and it is not the only one)</li>
 <li><a href="https://cis.whoi.edu/science/B/whalesounds/index.cfm">marine mammal sound database</a></li>
 <li><a href="https://www.npr.orgo/2020/03/25/821648089/the-last-sound">invisibilia podcast episode on sounds</a></li>
 </ul></li>
-<li>(27.01.2021) Lab 1: <a href="http://www.fon.hum.uva.nl/praat/">Praat</a>. Symbols for <a href="http://www.fon.hum.uva.nl/praat/manual/Phonetic_symbols__consonants_1.png">consonats</a>, <a href="http://www.fon.hum.uva.nl/praat/manual/Phonetic_symbols__vowels_1.png">vowels</a> and <a href="http://www.fon.hum.uva.nl/praat/manual/Phonetic_symbols__diacritics.html">diacritics</a></li>
-<li>HW 1 (due to 10.02.2021):
+<li><p>(27.01.2021) Lab 1: <a href="http://www.fon.hum.uva.nl/praat/">Praat</a>. Symbols for <a href="http://www.fon.hum.uva.nl/praat/manual/Phonetic_symbols__consonants_1.png">consonats</a>, <a href="http://www.fon.hum.uva.nl/praat/manual/Phonetic_symbols__vowels_1.png">vowels</a> and <a href="http://www.fon.hum.uva.nl/praat/manual/Phonetic_symbols__diacritics.html">diacritics</a></p></li>
+<li><p>HW 1 (due to 10.02.2021):</p>
 <ul>
 <li>Create the annotation for <a href="https://github.com/agricolamz/2018_m_Instrumental_Phonetics/blob/master/docs/materials/andi_plosives.wav?raw=true">this sound file</a> containing words <em>bek’:ub</em> (hot), <em>wuk:udu</em> (fall down), <em>tʃ’ek’a</em> (foot) and <em>t’uka</em> (goat). Here is <a href="https://raw.githubusercontent.com/agricolamz/2018_m_Instrumental_Phonetics/master/docs/hw1.png">an example</a>.</li>
 <li>Send the <code>.TextGrid</code> file to the course assistant <a href="mailto:nastya-saff@yandex.ru">Nastya Safonova</a> with the topic <code>Instrumental Phonetics: HW 1</code></li>
 </ul></li>
-<li>(03.02.2021) <a href="https://github.com/agricolamz/2021_HSE_m_Instrumental_phonetics/raw/master/docs/18.02.10_Vowels.pdf">Lec3</a> (<a href="https://youtu.be/zdTIzDHnwQo">video</a>)</li>
-<li>(03.02.2021) Lab
+<li><p>(03.02.2021) <a href="https://github.com/agricolamz/2021_HSE_m_Instrumental_phonetics/raw/master/docs/18.02.10_Vowels.pdf">Lec3</a> (<a href="https://youtu.be/zdTIzDHnwQo">video</a>)</p></li>
+<li><p>(03.02.2021) Lab</p>
 <ul>
 <li><a href="https://goo.gl/IzpUyo">sound</a></li>
 <li><a href="https://goo.gl/4tGthZ">TextGrid</a> (press Ctrl+S in order to save it to your PC)</li>
 <li><a href="https://docs.ropensci.org/phonfieldwork/"><code>phonfieldwork</code></a></li>
 </ul></li>
-<li>(10.02.2021) <a href="https://github.com/agricolamz/2021_HSE_m_Instrumental_phonetics/raw/master/docs/lec%203/2020.03.06_Sonorants.pdf">Lec4</a> (<a href="https://youtu.be/Ff7c8SUOxws">video</a>)</li>
-<li>(10.02.2021) <a href="https://github.com/agricolamz/2021_HSE_m_Instrumental_phonetics/raw/master/docs/18.02.17_Sonorants_sem_3.pdf">Lab4</a>
+<li><p>(10.02.2021) <a href="https://github.com/agricolamz/2021_HSE_m_Instrumental_phonetics/raw/master/docs/lec%203/2020.03.06_Sonorants.pdf">Lec4</a> (<a href="https://youtu.be/Ff7c8SUOxws">video</a>)</p></li>
+<li><p>(10.02.2021) <a href="https://github.com/agricolamz/2021_HSE_m_Instrumental_phonetics/raw/master/docs/18.02.17_Sonorants_sem_3.pdf">Lab4</a></p>
 <ul>
 <li><a href="https://goo.gl/5D9DNR">Andi nasals</a></li>
 <li><a href="https://github.com/agricolamz/2021_HSE_m_Instrumental_phonetics/raw/master/scripts/visualise_spectral_slices.R">R script for visualising spectral slices</a></li>
 </ul></li>
-<li>(17.02.2021) <a href="https://github.com/agricolamz/2021_HSE_m_Instrumental_phonetics/raw/master/docs/20.03.12_Obstruents_lec_4.pdf">Lec5</a> (<a href="https://youtu.be/89gC40Azv7g">video</a>)</li>
-<li>(17.02.2021) <a href="https://github.com/agricolamz/2021_HSE_m_Instrumental_phonetics/raw/master/docs/18.02.24_Obstruents_sem_4.pdf">Lab5</a>
+<li><p>(17.02.2021) <a href="https://github.com/agricolamz/2021_HSE_m_Instrumental_phonetics/raw/master/docs/20.03.12_Obstruents_lec_4.pdf">Lec5</a> (<a href="https://youtu.be/89gC40Azv7g">video</a>)</p></li>
+<li><p>(17.02.2021) <a href="https://github.com/agricolamz/2021_HSE_m_Instrumental_phonetics/raw/master/docs/18.02.24_Obstruents_sem_4.pdf">Lab5</a></p>
 <ul>
 <li><a href="https://goo.gl/hvdviI">fricatives</a>, <a href="https://goo.gl/pza6tx">fricatives’ TextGrid</a>, Extracted data: <a href="https://goo.gl/wo3QZN">ɬ</a>, <a href="https://goo.gl/eNZQKa">s</a>, <a href="https://goo.gl/NgeVSX">sh</a>, <a href="https://goo.gl/oDYvbJ">x</a>, <a href="https://goo.gl/vZQfZG">χ</a></li>
 <li><a href="https://goo.gl/SdGlZr">fricatives’ R script</a></li>
 <li><a href="https://goo.gl/PZA8WY">plosives</a>, <a href="https://goo.gl/1ZFtJt">plosives’ TextGrid</a>, Extracted data: <a href="https://goo.gl/NExChs">plosives’ duration</a></li>
 <li><a href="https://gist.githubusercontent.com/agricolamz/c4c5e6dfd5cfcd8052e5f03db7b12f64/raw/54248887fef342aad90db42f5439456dda5f1d88/CD_VOT.R">plosives’ R script</a></li>
 </ul></li>
+<li><p>(24.02.2021) <a href="https://github.com/agricolamz/2021_HSE_m_Instrumental_phonetics/raw/master/docs/2021_prosody.pdf">Lec6 on prosody</a> (<a href="https://youtu.be/jQwZ7KcmIzE">video</a>)</p></li>
+<li><p>(24.02.2021) <a href="https://github.com/agricolamz/2021_HSE_m_Instrumental_phonetics/raw/master/docs/2021_reading_spectrorgams.pdf">Lec6 on reading spectrograms</a></p></li>
+<li><p>(10.03.2021) Lec7 (<a href="https://youtu.be/eUmfhdsOhws">video</a>)</p></li>
+<li><p>(17.03.2021) Lec8 (<a href="https://youtu.be/n71fZxyiA2E">video</a>)</p></li>
 </ul>
 </div>
 <div id="reference" class="section level3">
@@ -391,7 +354,7 @@ $(document).ready(function () {
 
 $(document).ready(function () {
   $('.tabset-dropdown > .nav-tabs > li').click(function () {
-    $(this).parent().toggleClass('nav-tabs-open')
+    $(this).parent().toggleClass('nav-tabs-open');
   });
 });
 </script>
