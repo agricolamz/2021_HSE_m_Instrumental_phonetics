@@ -39,17 +39,31 @@ Final Mark =0.6 $\times$ (HW) + 0.4 $\times$ (Exam)
 
 * (10.03.2021) [Lec7 on methods of phonetic research](https://github.com/agricolamz/2021_HSE_m_Instrumental_phonetics/raw/master/docs/2021_methods.pdf) ([video](https://youtu.be/eUmfhdsOhws))
 * (10.03.2021) [Lec7 on perception](https://github.com/agricolamz/2021_HSE_m_Instrumental_phonetics/raw/master/docs/2021_perception.pdf) ([video](https://youtu.be/eUmfhdsOhws))
-        * [Audition and anatomy](https://www.youtube.com/watch?v=PeTriGTENoc)
-        * [McGurk effect](https://www.youtube.com/watch?v=kzo45hWXRWU)
-        * [Endoscopy (larynx)](https://youtu.be/-1Fv7IPmJo4?t=18)
-        * [Palatography](https://youtu.be/8Sh5hFnIuS4)
-        * [Electropalatography](https://youtu.be/1w90b2xY9f8)
-        * [Ultrasound tongue imaging (UTI)](https://youtu.be/b9URTdEe_Ko)
-        * [MRI](https://youtu.be/2t_UpKuSB8A)
+    * [Audition and anatomy](https://www.youtube.com/watch?v=PeTriGTENoc)
+    * [McGurk effect](https://www.youtube.com/watch?v=kzo45hWXRWU)
+    * [Endoscopy (larynx)](https://youtu.be/-1Fv7IPmJo4?t=18)
+    * [Palatography](https://youtu.be/8Sh5hFnIuS4)
+    * [Electropalatography](https://youtu.be/1w90b2xY9f8)
+    * [Ultrasound tongue imaging (UTI)](https://youtu.be/b9URTdEe_Ko)
+    * [MRI](https://youtu.be/2t_UpKuSB8A)
 
 * (17.03.2021) Lec8 ([video](https://youtu.be/n71fZxyiA2E))
 
-* (14.04.2021) Lec9 [zip archive](https://github.com/agricolamz/2021_HSE_m_Instrumental_phonetics/raw/master/docs/phonfieldwork_training.zip)
+* (25.03.2021) Lec9 [video](https://youtu.be/JsMrWUU7vo0)
+    * [pdf with word spectrum](https://github.com/agricolamz/2021_HSE_m_Instrumental_phonetics/raw/master/docs/spectrum_reading_training.pdf)
+    * [autograding google form with more tasks](https://docs.google.com/forms/d/e/1FAIpQLSfAfqyMxVx4S3iTZNEBMZHXhw1uiZb_ieyyA9bjK9TRGzCb8g/viewform)
+
+* (14.04.2021) Lec10 ([video](https://youtu.be/Gg5GhqnL3OU))
+    * [files for training](https://github.com/agricolamz/2021_HSE_m_Instrumental_phonetics/raw/master/docs/phonfieldwork_training.zip)
+    * [R script](https://github.com/agricolamz/2021_HSE_m_Instrumental_phonetics/raw/master/docs/phonfieldwork_training.R)
+
+* HW 2 (due to 28.04.2021):
+    * make a recording of syllables [ka], [ki], [ko], [ku] pronounced by two different people
+    * use `phonfiledwork` and `Praat` for merging and preannotation sounds
+    * manually adjust annotation after `phonfieldwork`
+    * create a plot that analyze vowel duration split by speaker and vowel (see the R script from the last lecture)
+    * Send your sound, `.TextGrid` and obtained plot to the course assistant [Nastya Safonova](mailto:nastya-saff@yandex.ru) with the topic `Instrumental Phonetics: HW 2`
+
 
 ### Reference:
 
