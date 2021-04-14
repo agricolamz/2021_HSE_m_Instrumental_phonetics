@@ -49,6 +49,8 @@ Final Mark =0.6 $\times$ (HW) + 0.4 $\times$ (Exam)
 
 * (17.03.2021) Lec8 ([video](https://youtu.be/n71fZxyiA2E))
 
+* (14.04.2021) Lec9 [zip archive](https://github.com/agricolamz/2021_HSE_m_Instrumental_phonetics/raw/master/docs/phonfieldwork_training.zip)
+
 ### Reference:
 
 * Ashby, M., J. Maidment (2005). Introducing phonetic science. Cambridge University Press.
